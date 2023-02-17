@@ -11,9 +11,10 @@ After arranging their ships, player 1 sends their targeted square (e.g.: A4, C6,
 | ----- | ----- |
 |false  | 0     |
 |true   | 1     |
-|(0, 0) | ?     |
-|(0, 1) | ?     |
-|(1, 1) | ?     |
+|A1     |{0, 0} |
+|F5     |{5, 4} |
+|(0, 1) |{0, 1} |
+|(2, 1) |{2, 1} |
 
 ## Basic Implementation
 ### Receiving
