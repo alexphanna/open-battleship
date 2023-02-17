@@ -20,7 +20,7 @@ After arranging their ships, player 1 sends their targeted square (e.g.: A4, C6,
 
 ```java
 byte[] buffer = new byte[512];
-packet = new DatagramPacket(buffer, buffer.length);
+DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 socket.receive(packet); // pauses until recieved
 System.out.println(new String(buffer, 0, buffer.length));
 ```
