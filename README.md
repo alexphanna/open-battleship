@@ -5,4 +5,11 @@
 - Each player takes one shot per turn (no streaks)
 
 ## Implementation
-### Gameplay Only (No Chat)
+### Server
+#### Recieve
+
+```
+byte[] buffer = new byte[512];
+sender = new DatagramPacket(buffer, buffer.length);
+socket.receive(sender);
+```
