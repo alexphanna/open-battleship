@@ -5,12 +5,20 @@
 - Each player takes one shot per turn (no streaks)
 
 ## Implementation
-### Server
-#### Recieve
+### Receiving
 
 ```
 byte[] buffer = new byte[512];
 packet = new DatagramPacket(buffer, buffer.length);
 socket.receive(packet);
 System.out.println(new String(buffer, 0, buffer.length));
+```
+
+### Sending
+
+```
+String str = "hello world";
+byte[] buffer = str.getBytes();
+DatagramPacket packet = new DatagramPacket(buffer, buffer.length, address);
+socket.send(packet);
 ```
