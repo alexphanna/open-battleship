@@ -1,3 +1,3 @@
 # Open-Battleship
 
-## How To Implement
+## Implementation
