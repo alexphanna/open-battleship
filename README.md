@@ -6,6 +6,10 @@
 
 ## How it works
 After arranging their ships, player 1 sends their targeted square (e.g.: A4, C6, F2) encoded in bytes to the opponent and waits to recieve a response. Player 2 recieves their targeted sqaure and sends back a boolean of whether a ship is on the targeted square encoded in bytes. The same steps happen again, but the order swaps and the player 2 sends their targeted square to player 1.
+|value|bytes|
+-------------
+|true |0    |
+|false|1    |
 
 ## Basic Implementation
 ### Receiving
