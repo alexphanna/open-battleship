@@ -25,3 +25,8 @@ byte[] buffer = str.getBytes();
 DatagramPacket packet = new DatagramPacket(buffer, buffer.length, address);
 socket.send(packet);
 ```
+## Contributions
+- [Alex Hanna](https://github.com/alexphanna)
+- [Brayden Hanna](https://github.com/braydenphanna)
+- [Edward Akselrud](https://github.com/Efaks)
+- [Matt Romano](https://github.com/MatthewDRomano)
