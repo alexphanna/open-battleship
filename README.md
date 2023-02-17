@@ -15,12 +15,6 @@ After arranging their ships, player 1 sends their targeted square (e.g.: A4, C6,
 |(0, 1) | ?     |
 |(1, 1) | ?     |
 
-```java
-// SECTION NOT FINISHED
-// Example for (0, 0) or A1
-Byte target = (int)('A' - 64) * 10 + 
-```
-
 ## Basic Implementation
 ### Receiving
 
