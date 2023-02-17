@@ -4,7 +4,9 @@
 - Each player has five ships (2, 3, 3, 4, 5)
 - Each player takes one shot per turn (no streaks)
 
-## Implementation
+## How it works
+
+## Basic Implementation
 ### Receiving
 
 ```java
