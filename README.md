@@ -5,3 +5,4 @@
 - Each player takes one shot per turn (no streaks)
 
 ## Implementation
+### Gameplay Only (No Chat)
