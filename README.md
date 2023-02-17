@@ -10,6 +10,7 @@
 
 ```
 byte[] buffer = new byte[512];
-sender = new DatagramPacket(buffer, buffer.length);
-socket.receive(sender);
+packet = new DatagramPacket(buffer, buffer.length);
+socket.receive(packet);
+System.out.println(new String(buffer, 0, buffer.length));
 ```
