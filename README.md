@@ -17,18 +17,20 @@ After arranging their ships, player 1 sends their targeted square (e.g.: A4, C6,
 ### Receiving
 
 ```java
+DatagramSocket socket = new DatagramSocket(PORT);
 byte[] buffer = new byte[512];
 DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
-socket.receive(packet); // pauses until recieved
+socket.receive(packet);
 System.out.println(new String(buffer, 0, buffer.length));
 ```
 
 ### Sending
 
 ```java
+DatagramSocket socket = new DatagramSocket();
 String str = "hello world";
 byte[] buffer = str.getBytes();
-DatagramPacket packet = new DatagramPacket(buffer, buffer.length, address);
+DatagramPacket packet = new DatagramPacket(buffer, buffer.length, ADDRESS, PORT);
 socket.send(packet);
 ```
 ## Contributions
